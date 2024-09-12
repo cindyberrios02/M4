@@ -31,4 +31,30 @@ public class Numeros {
         System.out.println("Fin del programa");
 
     }
-}
+    public void ejercicio02() {
+        Scanner sc = new Scanner(System.in);
+        int[] numeros = new int[10];
+        int negativos = 0, positivos = 0, ceros = 0;
+
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Ingrese número " + (i + 1) + ": ");
+            numeros[i] = sc.nextInt();
+        }
+
+        for (int numero : numeros) {
+            if (numero < 0) {
+                negativos++;
+            } else if (numero > 0) {
+                positivos++;
+            } else {
+                ceros++;
+            }
+        }
+
+        System.out.println("\nResultados:");
+        System.out.println("Negativos: " + negativos);
+        System.out.println("Positivos: " + positivos);
+        System.out.println("Ceros: " + ceros);
+    }
+    }
+

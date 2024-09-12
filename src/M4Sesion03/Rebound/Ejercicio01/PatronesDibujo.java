@@ -22,7 +22,7 @@ public class PatronesDibujo {
                 //System.out.print(j);
                 if (i == 1 || j == 1 || i == numero || j == numero) {
                     System.out.print("*");
-                }else {
+                } else {
                     System.out.print(" ");
                 }
             }
